@@ -1,0 +1,36 @@
+<div class="body">
+  <div class="login">
+    <form [formGroup]="userform" (submit)="login()">
+      <img src="./assets/img/Ak.png" width="50%" />
+      <mat-form-field class="broad" appearance="fill">
+        <mat-label>Username</mat-label>
+        <input
+          type="text"
+          matInput
+          autocomplete="off"
+          formControlName="username"
+          required
+        />
+      </mat-form-field>
+      <mat-form-field class="broad" appearance="fill">
+        <mat-label>Password</mat-label>
+        <input
+          type="password"
+          matInput
+          autocomplete="off"
+          formControlName="password"
+          required
+        />
+      </mat-form-field>
+      <br />
+      <button
+        type="submit"
+        class="broad button"
+        mat-raised-button
+        color="primary"
+      >
+        > Login
+      </button>
+    </form>
+  </div>
+</div>
